@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background3"
+    tools:context="dumyprojects.com.integratedsignin.MainActivity">
+
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#99e7e5e5">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="2"
+    android:weightSum="1.5"
+    android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DON'T STOP UNTIL "
+            android:textSize="40dp"
+            android:gravity="center" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="YOU'RE PROUD"
+            android:textSize="35dp"
+            android:gravity="center" />
+
+</LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="Choose a job you love"
+            android:textSize="20dp"
+            />
+    <EditText
+        android:id="@+id/loginId"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:hint=" User Id"
+        android:layout_marginTop="30dp"
+        android:layout_weight="0.8"
+        android:maxLines="1"
+        android:padding="8dp" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_weight="0.8"
+        android:padding="12dp"
+        android:hint="********"
+        android:inputType="textPassword"
+        />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="10dp"
+        android:text="Remember me" />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_weight="0.5"
+        android:layout_marginTop="20dp"
+        android:background="#f25e4a"
+        android:text="LOG IN"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        />
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_weight="0.7">
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="200dp"
+           android:layout_marginRight="5dp"
+           android:text="Register here"
+           android:textSize="20dp"
+           android:layout_gravity="center"/>
+<Button
+    android:layout_width="50dp"
+    android:layout_height="match_parent"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="5dp"
+    android:layout_gravity="right"
+    />
+   </LinearLayout>
+        <com.google.android.gms.common.SignInButton
+        android:id="@+id/googleBTN"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="0.5">
+
+    </com.google.android.gms.common.SignInButton>
+
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/fb"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_weight="0.5"
+        android:background="#416BC1"
+        android:onClick="perform"
+        android:text="FaceBook"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="0.5"
+    android:background="@drawable/linked_in_login_btn"
+    android:layout_marginTop="12dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginBottom="20dp"/>
+</LinearLayout>
+
+    <!--<Button
+        android:id="@+id/facebookBTN"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+android:background="@drawable/linked_in_login_btn"
+        android:layout_marginTop="16dp" />
+-->
+
+</RelativeLayout>

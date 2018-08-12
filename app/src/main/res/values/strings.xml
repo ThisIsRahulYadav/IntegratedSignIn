@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">IntegratedSignIn</string>
+    <string name="facebook_app_id">2064355890454329</string>
+    <string name="fb_login_protocol_scheme">fb2064355890454329</string>
+
+</resources>
